@@ -14,4 +14,13 @@ class Hyundai extends Car
         return self::MODEL_NAME;
     }
 
+    /**
+     * @return void
+     */
+    function start()
+    {
+        echo 'another method';
+
+        $this->engine->setIsOn(true);
+    }
 }

@@ -10,12 +10,12 @@ abstract class Car implements MovableInterface
     /**
      * @var
      */
-    public $engine;
+    protected $engine;
 
     /**
      * @var
      */
-    public $transmission;
+    protected $transmission;
 
     public function __construct(Engine $engine, Transmission $transmission)
     {
