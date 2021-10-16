@@ -1,6 +1,6 @@
 <?php
 
-include 'Car.php';
+namespace car;
 
 class Hyundai extends Car
 {

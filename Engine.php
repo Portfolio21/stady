@@ -1,5 +1,7 @@
 <?php
 
+namespace engine;
+
 interface Engine
 {
     /**

@@ -1,6 +1,6 @@
 <?php
 
-include 'Transmission.php';
+namespace transmission;
 
 class SimplyTransmission implements Transmission
 {

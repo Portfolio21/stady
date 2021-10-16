@@ -1,5 +1,6 @@
 <?php
 
+namespace car;
 
 interface MovableInterface
 {

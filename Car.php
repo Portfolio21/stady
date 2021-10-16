@@ -1,6 +1,9 @@
 <?php
 
-include 'MovableInterface.php';
+namespace car;
+
+use engine\Engine;
+use transmission\Transmission;
 
 abstract class Car implements MovableInterface
 {
@@ -16,6 +19,11 @@ abstract class Car implements MovableInterface
      * @var
      */
     protected $transmission;
+
+    /**
+     * @var string
+     */
+    private static $info = 'Info about Car';
 
     public function __construct(Engine $engine, Transmission $transmission)
     {
@@ -57,6 +65,10 @@ abstract class Car implements MovableInterface
             echo 'Текущая скорость автомибиля ' . $this->transmission->getSpeed();
         }
 
+    }
+
+    public static function showInfo() {
+        echo self::$info;
     }
 
     private function checkEngine()

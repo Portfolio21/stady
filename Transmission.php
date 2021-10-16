@@ -1,5 +1,7 @@
 <?php
 
+namespace transmission;
+
 interface Transmission
 {
     /**

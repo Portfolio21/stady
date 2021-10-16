@@ -1,6 +1,6 @@
 <?php
 
-include 'Engine.php';
+namespace engine;
 
 class SimplyEngine implements Engine
 {

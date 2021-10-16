@@ -1,12 +1,11 @@
 <?php
 
-include 'SimplyEngine.php';
-include 'SimplyTransmission.php';
-include 'Hyundai.php';
+include 'ClassAutoloader.php';
+new ClassAutoloader();
 
-$engine = new SimplyEngine();
-$transmission = new SimplyTransmission();
-
-$car = new Hyundai($engine, $transmission);
+$engine = new engine\SimplyEngine();
+$transmission = new transmission\SimplyTransmission();
+$car = new car\Hyundai($engine, $transmission);
+$car::showInfo();
 $car->start();
-$car->up();;
+$car->up();
