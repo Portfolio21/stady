@@ -1,0 +1,13 @@
+{
+"name": "dgruzd/test-composer",
+"authors": [
+{
+"name": "gruzd ulia",
+"email": "gruzdulia@gmail.com"
+}
+],
+"require": {
+"guzzlehttp/guzzle": "^7.4",
+"gruzd/test-composer": "dev-master"
+}
+}
