@@ -8,6 +8,4 @@ $formatter = new Formatter();
 $writer = new FileWriter();
 
 $logger = new Logger($writer, $formatter);
-$logger->log('info', 'Test Log');
-
-
+$logger->emergency('Test Log');

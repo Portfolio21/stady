@@ -35,6 +35,6 @@ class Formatter implements FormatterInterface
             '{context}' => $context,
         ];
 
-        return strtr($this->format, $replacement);;
+        return strtr($this->format, $replacement);
     }
 }
